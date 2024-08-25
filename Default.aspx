@@ -11,12 +11,13 @@
 
     <body>
         <form id="frmInicial" runat="server" style="width: 100%; height: 100%;">
-            <asp:GridView ID="gdvInicial" runat="server" AutoGenerateColumns="false">
+            <asp:GridView ID="gdvInicial" runat="server" AutoGenerateColumns="false" Width="100%">
                 <Columns>
-                    <asp:BoundField DataField="UsuariosSenhasId" HeaderText="Identificação"/>
-                    <asp:BoundField DataField="Usuario" HeaderText="Usuário"/>
-                    <asp:BoundField DataField="Senha" HeaderText="Senha"/>
-                    <asp:BoundField DataField="Competencia" HeaderText="Competência"/>
+                    <asp:BoundField DataField="cpf" HeaderText="CPF"/>
+                    <asp:BoundField DataField="nomePaciente" HeaderText="Nome paciente"/>
+                    <asp:BoundField DataField="dataNascimento" HeaderText="Data nascimento"/>
+                    <asp:BoundField DataField="examesRealizados" HeaderText="Exames"/>
+                    <asp:BoundField DataField="dataExameRealizado" HeaderText="Data exame"/>
                 </Columns>
             </asp:GridView>
         </form>
